@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Coffee</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3e9e1;
+      padding: 20px;
+    }
+    h2 {
+      color: #3e2c23;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, textarea, button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #3e2c23;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2d1d15;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Place Your Coffee Order</h2>
+
+  <form action="https://formsubmit.co/centemalon777@gmail.com" method="POST">
+    <input type="hidden" name="_redirect" value="https://yourwebsite.com/thankyou.html">
+
+    <label for="name">Full Name:</label>
+
+<input type="text" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" required>
+
+    <label for="coffee">Select Coffee:</label>
+    <select name="coffee" required>
+      <option value="Espresso">Espresso</option>
+      <option value="Latte">Latte</option>
+      <option value="Cappuccino">Cappuccino</option>
+      <option value="Mocha">Mocha</option>
+    </select>
+
+    <label for="notes">Additional Notes:</label>
+    <textarea name="notes" rows="4"></textarea>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coffee Nest - Home</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f1ee;
+      color: #3e2c23;
+    }
+    header {
+      background: linear-gradient(
+          rgba(62, 44, 35, 0.7), 
+          rgba(62, 44, 35, 0.7)
+        ), url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+align-items: center;
+      text-align: center;
+      color: #f4f1ee;
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+    .btn {
+      background-color: #6f4e37;
+      color: #f4f1ee;
+      border: none;
+      padding: 1rem 3rem;
+      font-size: 1.2rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #503a29;
+    }
+    main {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 20px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .intro h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .intro p {
+      font-size: 1.1rem;
+      color: #6b5e53;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .coffee-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .coffee-item {
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+}
+
+.coffee-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .coffee-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+    .coffee-item-content {
+      padding: 1rem 1.5rem;
+    }
+    .coffee-item-content h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.5rem;
+      color: #4b382a;
+    }
+    .coffee-item-content p {
+      margin: 0;
+      color: #7a6c63;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Coffee Nest</h1>
+    <p>Your daily dose of freshly brewed perfection.</p>
+    <a href="#shop" class="btn">Shop Now</a>
+  </header>
+  
+  <main>
+    <section class="intro">
+      <h2>Discover Our Best Blends</h2>
+      <p>We bring you a curated selection of premium coffees sourced from around the world. Each cup crafted to deliver a rich and satisfying experience.</p>
+    </section>
+
+    <section id="shop" class="coffee-gallery">
+      <article class="coffee-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Espresso"/>
+        <div class="coffee-item-content">
+          <h3>Espresso</h3>
+          <p>$3.50</p>
+        </div>
+</article>
+
+      <article class="coffee-item">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Cappuccino"/>
+        <div class="coffee-item-content">
+          <h3>Cappuccino</h3>
+          <p>4.00</p>
+        </div>
+      </article>
+      <article class="coffee-item">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Latte"/>
+        <div class="coffee-item-content">
+          <h3>Latte</h3>
+          <p>4.25</p>
+        </div>
+      </article>
+      <article class="coffee-item">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format   fit=crop   w=600   q=80" alt="Mocha"/>
+        <div class="coffee-item-content">
+          <h3>Mocha</h3>
+          <p>4.50</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Nest</title>
+  <style>
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3e9e1;
+   background-repeat: no-repeat;
+  background-size: cover; /* optional to cover whole area */
+  background-position: center;
+  
+}
+
+    .LOP{
+     font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+    }
+    .cof{
+      background-color:  #3e2c23;
+      display: flex;
+     justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+   
+    }
+    .nav{
+display: flex;
+gap: 10px;
+    }
+    .nav a{
+      text-decoration: none;
+      font-size: 16px;
+      color: whitesmoke;
+      cursor: pointer;
+    }
+    section {
+    background-color: #e6f2ff;
+      border: 1px solid #003366;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 1250px;
+      margin: 20px auto;
+}
+.details-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 200px; /* max width for open state */
+}
+
+.bg-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 650%;
+  height: 90%;
+  object-fit: cover;
+  z-index: 0; /* behind */
+  border-radius: 7px;
+}
+
+details {
+  position: relative;
+  width: 60px;
+  transition: width 0.3s;
+  overflow: hidden;
+  height: 100vh;
+  border-radius: 7px;
+  box-shadow: 0.4px 4px 4px rgb(165, 160, 152);
+  background-color:  #3e2c23;/* slightly transparent so image can show */
+  z-index: 1;
+}
+
+details[open] {
+  width: 200px;
+}
+
+summary {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  list-style: none;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+   .menu a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 16px;
+}
+.menu a:hover {
+  color: brown;
+}
+    .li{
+      color: white;
+      text-decoration: none;
+    }
+    
+  </style>
+</head>
+<body>
+
+   
+      <div class="cof">
+         <div class="LOP">Coffee Nest</div>
+         <div class="nav">
+<a href="">Home</a>
+<a href="">Order</a>
+<a href="">About </a>
+<a href="">Contact us</a>
+  </div>
+  </div>
+ <div class="details-wrapper">
+
+  <details>
+    <summary>☰</summary>
+  <ul class="menu">
+  <li><a href="home.html">Home</a></li>
+  <br><br>
+  <li><a href="gallery.html">Menu</a></li>
+  <br><br>
+  <li><a href="rt.html">Order</a></li>
+  <br><br>
+    <li><a href="testimonial.html">Testimonial</a></li>
+  <br><br>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+  </details>
+</div>
+ 
+</body>
+</html>

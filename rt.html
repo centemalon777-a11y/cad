@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now</title>
+  <style>
+    body { font-family: Arial; background: whitesmoke; padding: 20px; }
+    form { background:white; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto; }
+    input, textarea, button {
+      width: 100%; padding: 10px; margin: 10px 0;
+      border: 1px solid #ccc; border-radius: 4px;
+    }
+    h2{
+      color:    black;
+    }
+    button { background:     #5a3a2e; color: whitesmoke; border: none; }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;"> ORDER</h2>
+
+<form action="https://formsubmit.co/centemalon777@gmail.com" method="POST">
+  <!-- Replace YOUR_EMAIL_HERE with the email to receive orders -->
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+  <input type="text" name="address" placeholder="Delivery Address" required>
+      <label for="coffee">Select Coffee:</label>
+    <select id="coffee" required>
+      <option value="">--Choose Coffee--</option>
+      <option value="espresso">Espresso</option>
+      <option value="latte">Latte</option>
+      <option value="cappuccino">Cappuccino</option>
+      <option value="americano">Americano</option>
+    </select>
+  <input type="number" name="quantity" placeholder="How many Packet" required>
+  <textarea name="note" placeholder="Name of goods"></textarea>
+
+  <!-- Prevent spam -->
+
+<input type="hidden" name="_captcha" value="false">
+
+  <!-- Redirect after submit -->
+  <input type="hidden" name="_next" value="thankyou.html">
+
+  <button type="submit">Place Order</button>
+</form>
+
+</body>
+</html>
